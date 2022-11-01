@@ -9,7 +9,7 @@ import { Experiencia } from '../model/experiencia';
 })
 export class SExperienciaService {
 <<<<<<< HEAD
-  expURL = 'https://backend-mgb.herokuapp.com/explab/';
+  expURL = 'https://appbackendproy.herokuapp.com/explab/';
 =======
   URL = environment.URL + 'explab/';
 >>>>>>> dbccedd5c18384aa757cbb7ab7d9f7f3bc0e7672
@@ -22,7 +22,7 @@ export class SExperienciaService {
 
   public detail(id: number): Observable<Experiencia>{
     return this.httpClient.get<Experiencia>(this.URL + `detail/${id}`);
-  } 
+  }
 
   public save(experiencia: Experiencia): Observable<any>{
     return this.httpClient.post<any>(this.URL + 'create', experiencia);
